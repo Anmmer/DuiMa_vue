@@ -3,7 +3,7 @@ package com.example.system.configuration.utils;
 import com.example.system.configuration.constants.Constants;
 import com.example.system.domain.SimpleUser;
 import com.example.system.domain.User;
-import com.example.system.configuration.vo.ActiverUser;
+import com.example.system.vo.ActiverUser;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.subject.Subject;
 

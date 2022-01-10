@@ -2,7 +2,7 @@ package com.example.system.service;
 
 import com.example.system.domain.Role;
 import com.example.system.dto.RoleDto;
-import com.example.system.configuration.vo.DataGridView;
+import com.example.system.vo.DataGridView;
 
 import java.util.List;
 

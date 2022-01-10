@@ -1,6 +1,6 @@
 package com.example.system.configuration.config.exception;
 
-import com.example.system.configuration.vo.AjaxResult;
+import com.example.system.vo.AjaxResult;
 import org.springframework.validation.BindException;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;

@@ -20,7 +20,7 @@ import java.util.Date;
 /**
     * 系统访问记录
     */
-@ApiModel(value="com-bjsxt-domain-LoginInfo")
+@ApiModel(value="com-example.system-domain-LoginInfo")
 @Data
 @EqualsAndHashCode(callSuper=true)
 @AllArgsConstructor

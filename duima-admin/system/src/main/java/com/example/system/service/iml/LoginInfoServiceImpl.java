@@ -6,7 +6,7 @@ import com.example.system.domain.LoginInfo;
 import com.example.system.dto.LoginInfoDto;
 import com.example.system.mapper.LoginInfoMapper;
 import com.example.system.service.LoginInfoService;
-import com.example.system.configuration.vo.DataGridView;
+import com.example.system.vo.DataGridView;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

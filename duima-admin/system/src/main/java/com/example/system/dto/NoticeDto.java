@@ -12,7 +12,7 @@ import javax.validation.constraints.NotBlank;
 /**
 * @Author:
 */
-@ApiModel(value="com-bjsxt-dto-NoticeDto")
+@ApiModel(value="com-example.system-dto-NoticeDto")
 @Data
 @EqualsAndHashCode(callSuper=true)
 @AllArgsConstructor

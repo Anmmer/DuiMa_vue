@@ -1,4 +1,4 @@
-package com.example.system.configuration.vo;
+package com.example.system.vo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

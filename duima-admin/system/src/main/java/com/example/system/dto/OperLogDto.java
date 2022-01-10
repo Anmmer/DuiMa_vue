@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 /**
  * @Author:
  */
-@ApiModel(value = "com-bjsxt-domain-OperLog")
+@ApiModel(value = "com-example.system-domain-OperLog")
 @Data
 @EqualsAndHashCode(callSuper = true)
 @AllArgsConstructor

@@ -1,4 +1,4 @@
-package com.example.system.configuration.vo;
+package com.example.system.vo;
 
 import io.swagger.annotations.ApiModel;
 import lombok.AllArgsConstructor;
@@ -12,7 +12,7 @@ import java.util.List;
  * @Author:
  * 表格数据传输对象
  */
-@ApiModel(value="com-bjsxt-vo-DataGridView")
+@ApiModel(value="com-example.system-vo-DataGridView")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

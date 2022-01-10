@@ -11,7 +11,7 @@ import com.example.system.mapper.RoleMapper;
 import com.example.system.mapper.UserMapper;
 import com.example.system.service.UserService;
 import com.example.system.configuration.utils.AppMd5Utils;
-import com.example.system.configuration.vo.DataGridView;
+import com.example.system.vo.DataGridView;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

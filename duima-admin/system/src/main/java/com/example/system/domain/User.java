@@ -21,7 +21,7 @@ import java.util.Date;
 /**
     * 用户信息表
     */
-@ApiModel(value="com-bjsxt-domain-User")
+@ApiModel(value="com-example.system-domain-User")
 @Data
 @EqualsAndHashCode(callSuper=true)
 @AllArgsConstructor
@@ -121,7 +121,7 @@ public class User extends BaseEntity {
     private String introduction;
 
     /**
-     * 
+     *
 医生级别sys_dict_type:sys_user_level
      */
     @TableField(value = "user_rank")

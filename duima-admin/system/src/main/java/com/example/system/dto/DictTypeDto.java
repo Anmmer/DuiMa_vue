@@ -13,7 +13,7 @@ import java.util.Date;
 /**
  * @Author:
  */
-@ApiModel(value="com-bjsxt-dto-DictTypeDto")
+@ApiModel(value="com-example.system-dto-DictTypeDto")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

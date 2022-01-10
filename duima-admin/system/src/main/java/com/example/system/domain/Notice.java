@@ -20,7 +20,7 @@ import java.util.Date;
 /**
     * 通知公告表
     */
-@ApiModel(value="com-bjsxt-domain-Notice")
+@ApiModel(value="com-example.system-domain-Notice")
 @Data
 @EqualsAndHashCode(callSuper=true)
 @AllArgsConstructor

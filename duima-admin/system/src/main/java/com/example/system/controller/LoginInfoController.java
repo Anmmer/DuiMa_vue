@@ -2,8 +2,8 @@ package com.example.system.controller;
 
 import com.example.system.dto.LoginInfoDto;
 import com.example.system.service.LoginInfoService;
-import com.example.system.configuration.vo.AjaxResult;
-import com.example.system.configuration.vo.DataGridView;
+import com.example.system.vo.AjaxResult;
+import com.example.system.vo.DataGridView;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

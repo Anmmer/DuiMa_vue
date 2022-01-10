@@ -9,7 +9,7 @@ import com.example.system.domain.CheckItem;
 import com.example.system.dto.CheckItemDto;
 import com.example.system.mapper.CheckItemMapper;
 import com.example.system.service.CheckItemService;
-import com.example.system.configuration.vo.DataGridView;
+import com.example.system.vo.DataGridView;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

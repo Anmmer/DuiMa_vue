@@ -2,7 +2,7 @@ package com.example.system.configuration.config.shiro;
 
 import com.alibaba.fastjson.JSON;
 import com.example.system.configuration.constants.HttpStatus;
-import com.example.system.configuration.vo.AjaxResult;
+import com.example.system.vo.AjaxResult;
 import org.apache.shiro.web.filter.authc.FormAuthenticationFilter;
 
 import javax.servlet.ServletRequest;

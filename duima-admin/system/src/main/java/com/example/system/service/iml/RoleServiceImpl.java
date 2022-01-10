@@ -9,7 +9,7 @@ import com.example.system.domain.Role;
 import com.example.system.dto.RoleDto;
 import com.example.system.mapper.RoleMapper;
 import com.example.system.service.RoleService;
-import com.example.system.configuration.vo.DataGridView;
+import com.example.system.vo.DataGridView;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -11,7 +11,7 @@ import com.example.system.dto.DictTypeDto;
 import com.example.system.mapper.DictDataMapper;
 import com.example.system.mapper.DictTypeMapper;
 import com.example.system.service.DictTypeService;
-import com.example.system.configuration.vo.DataGridView;
+import com.example.system.vo.DataGridView;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

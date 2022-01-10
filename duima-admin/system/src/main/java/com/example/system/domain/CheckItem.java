@@ -21,7 +21,7 @@ import java.util.Date;
 /**
     * 检查费用表
     */
-@ApiModel(value="com-bjsxt-domain-CheckItem")
+@ApiModel(value="com-example.system-domain-CheckItem")
 @Data
 @EqualsAndHashCode(callSuper=true)
 @AllArgsConstructor

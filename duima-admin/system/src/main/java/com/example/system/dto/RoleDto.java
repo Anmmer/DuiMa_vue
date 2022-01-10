@@ -13,7 +13,7 @@ import javax.validation.constraints.NotNull;
 /**
 * @Author:
 */
-@ApiModel(value="com-bjsxt-dto-RoleDto")
+@ApiModel(value="com-example.system-dto-RoleDto")
 @Data
 @EqualsAndHashCode(callSuper=true)
 @AllArgsConstructor

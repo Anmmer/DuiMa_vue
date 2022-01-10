@@ -18,7 +18,7 @@ import java.util.Date;
 * @Author:
 */
 
-@ApiModel(value="com-bjsxt-domain-RegisteredItem")
+@ApiModel(value="com-example.system-domain-RegisteredItem")
 @Data
 @EqualsAndHashCode(callSuper=true)
 @AllArgsConstructor

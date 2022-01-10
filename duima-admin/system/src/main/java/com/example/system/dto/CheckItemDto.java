@@ -15,7 +15,7 @@ import java.math.BigDecimal;
 * @Author:
  * 检查费用表
 */
-@ApiModel(value="com-bjsxt-dto-CheckItemDto")
+@ApiModel(value="com-example.system-dto-CheckItemDto")
 @Data
 @EqualsAndHashCode(callSuper=true)
 @AllArgsConstructor

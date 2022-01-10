@@ -20,7 +20,7 @@ import java.util.Date;
 /**
     * 字典类型表
     */
-@ApiModel(value="com-bjsxt-domain-DictType")
+@ApiModel(value="com-example.system-domain-DictType")
 @Data
 @EqualsAndHashCode(callSuper=true)
 @AllArgsConstructor

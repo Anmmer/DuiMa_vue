@@ -1,4 +1,4 @@
-package com.example.system.configuration.vo;
+package com.example.system.vo;
 
 import com.example.system.configuration.constants.HttpStatus;
 
@@ -83,7 +83,7 @@ public class AjaxResult extends HashMap<String,Object> {
      * @return 成功消息
      */
     public static AjaxResult success() {
-        return AjaxResult.success("操作成功");
+        return success("操作成功");
     }
 
     /**
@@ -92,7 +92,7 @@ public class AjaxResult extends HashMap<String,Object> {
      * @return 成功消息
      */
     public static AjaxResult success(Object data) {
-        return AjaxResult.success("操作成功", data);
+        return success("操作成功", data);
     }
 
     /**
@@ -102,7 +102,7 @@ public class AjaxResult extends HashMap<String,Object> {
      * @return 成功消息
      */
     public static AjaxResult success(String msg) {
-        return AjaxResult.success(msg, null);
+        return success(msg, null);
     }
 
     /**
@@ -131,7 +131,7 @@ public class AjaxResult extends HashMap<String,Object> {
      * 返回失败消息
      */
     public static AjaxResult fail() {
-        return AjaxResult.fail("操作失败");
+        return fail("操作失败");
     }
 
     /**
@@ -141,7 +141,7 @@ public class AjaxResult extends HashMap<String,Object> {
      * @return 警告消息
      */
     public static AjaxResult fail(String msg) {
-        return AjaxResult.fail(msg, null);
+        return fail(msg, null);
     }
 
     /**
@@ -159,7 +159,7 @@ public class AjaxResult extends HashMap<String,Object> {
      * 返回错误消息
      */
     public static AjaxResult error() {
-        return AjaxResult.error("操作失败");
+        return error("操作失败");
     }
 
     /**
@@ -169,7 +169,7 @@ public class AjaxResult extends HashMap<String,Object> {
      * @return 警告消息
      */
     public static AjaxResult error(String msg) {
-        return AjaxResult.error(msg, null);
+        return error(msg, null);
     }
 
     /**
@@ -201,7 +201,7 @@ public class AjaxResult extends HashMap<String,Object> {
      * @return 添加修改删除转化信息
      */
     public static AjaxResult toAjax(int rows) {
-        return rows > 0 ? AjaxResult.success() : AjaxResult.fail();
+        return rows > 0 ? success() : fail();
     }
 
 }

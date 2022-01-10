@@ -17,7 +17,7 @@ import javax.validation.constraints.NotNull;
 /**
     * 部门/科室表dto
     */
-@ApiModel(value="com-bjsxt-dto-DeptDto")
+@ApiModel(value="com-example.system-dto-DeptDto")
 @Data
 @EqualsAndHashCode(callSuper=true)
 @AllArgsConstructor

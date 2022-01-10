@@ -9,7 +9,7 @@ import com.example.system.domain.RegisteredItem;
 import com.example.system.dto.RegisteredItemDto;
 import com.example.system.mapper.RegisteredItemMapper;
 import com.example.system.service.RegisteredItemService;
-import com.example.system.configuration.vo.DataGridView;
+import com.example.system.vo.DataGridView;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -20,7 +20,7 @@ import java.util.Date;
 /**
     * 部门/科室表
     */
-@ApiModel(value="com-bjsxt-domain-Dept")
+@ApiModel(value="com-example.system-domain-Dept")
 @Data
 @EqualsAndHashCode(callSuper=true)
 @AllArgsConstructor

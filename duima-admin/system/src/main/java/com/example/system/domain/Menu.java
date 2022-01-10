@@ -20,7 +20,7 @@ import java.util.Date;
 /**
     * 菜单权限表
     */
-@ApiModel(value="com-bjsxt-domain-Menu")
+@ApiModel(value="com-example.system-domain-Menu")
 @Data
 @EqualsAndHashCode(callSuper=true)
 @AllArgsConstructor

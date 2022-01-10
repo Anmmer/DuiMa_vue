@@ -20,7 +20,7 @@ import java.util.Date;
 /**
     * 角色信息表
     */
-@ApiModel(value="com-bjsxt-domain-Role")
+@ApiModel(value="com-example.system-domain-Role")
 @Data
 @EqualsAndHashCode(callSuper=true)
 @AllArgsConstructor

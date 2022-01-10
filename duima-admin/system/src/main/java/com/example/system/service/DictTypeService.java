@@ -3,7 +3,7 @@ package com.example.system.service;
 import com.example.system.domain.DictData;
 import com.example.system.domain.DictType;
 import com.example.system.dto.DictTypeDto;
-import com.example.system.configuration.vo.DataGridView;
+import com.example.system.vo.DataGridView;
 
 import java.util.List;
 import java.util.Map;

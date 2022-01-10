@@ -2,7 +2,7 @@ package com.example.system.configuration.config.shiro;
 
 import com.example.system.domain.User;
 import com.example.system.service.UserService;
-import com.example.system.configuration.vo.ActiverUser;
+import com.example.system.vo.ActiverUser;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;

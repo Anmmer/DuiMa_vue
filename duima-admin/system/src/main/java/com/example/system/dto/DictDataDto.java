@@ -14,7 +14,7 @@ import java.util.Date;
 /**
  * @Author:
  */
-@ApiModel(value="com-bjsxt-domain-DictData")
+@ApiModel(value="com-example.system-domain-DictData")
 @Data
 @EqualsAndHashCode(callSuper=true)
 @AllArgsConstructor

@@ -5,7 +5,7 @@ import com.example.system.domain.Menu;
 import com.example.system.dto.MenuDto;
 import com.example.system.service.MenuService;
 import com.example.system.configuration.utils.ShiroSecurityUtils;
-import com.example.system.configuration.vo.AjaxResult;
+import com.example.system.vo.AjaxResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;

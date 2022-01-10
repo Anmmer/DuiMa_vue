@@ -1,9 +1,8 @@
 package com.example.system.service;
 
 import com.example.system.domain.Notice;
-import com.baomidou.mybatisplus.extension.service.IService;
 import com.example.system.dto.NoticeDto;
-import com.example.system.configuration.vo.DataGridView;
+import com.example.system.vo.DataGridView;
 
 /**
  * @Author:

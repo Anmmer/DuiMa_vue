@@ -8,7 +8,7 @@ import com.example.system.domain.Notice;
 import com.example.system.dto.NoticeDto;
 import com.example.system.mapper.NoticeMapper;
 import com.example.system.service.NoticeService;
-import com.example.system.configuration.vo.DataGridView;
+import com.example.system.vo.DataGridView;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

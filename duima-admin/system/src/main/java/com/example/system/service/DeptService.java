@@ -2,7 +2,7 @@ package com.example.system.service;
 
 import com.example.system.domain.Dept;
 import com.example.system.dto.DeptDto;
-import com.example.system.configuration.vo.DataGridView;
+import com.example.system.vo.DataGridView;
 
 import java.util.List;
 

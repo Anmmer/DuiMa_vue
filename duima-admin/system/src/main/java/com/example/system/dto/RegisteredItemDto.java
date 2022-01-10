@@ -15,7 +15,7 @@ import java.math.BigDecimal;
 * @Author:
 */
 
-@ApiModel(value="com-bjsxt-dto-RegisteredItemDto")
+@ApiModel(value="com-example.system-dto-RegisteredItemDto")
 @Data
 @EqualsAndHashCode(callSuper=true)
 @AllArgsConstructor

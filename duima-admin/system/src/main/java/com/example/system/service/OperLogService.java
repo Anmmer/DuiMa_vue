@@ -2,7 +2,7 @@ package com.example.system.service;
 
 import com.example.system.domain.OperLog;
 import com.example.system.dto.OperLogDto;
-import com.example.system.configuration.vo.DataGridView;
+import com.example.system.vo.DataGridView;
 
 /**
  * @Author:

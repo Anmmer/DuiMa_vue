@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 /**
     * 系统访问记录
     */
-@ApiModel(value="com-bjsxt-dto-LoginInfoDto")
+@ApiModel(value="com-example.system-dto-LoginInfoDto")
 @Data
 @EqualsAndHashCode(callSuper=true)
 @AllArgsConstructor

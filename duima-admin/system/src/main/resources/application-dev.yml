@@ -43,8 +43,14 @@ shiro:
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#    org.apache.ibatis.logging.log4j.Log4jImpl
+#    org.apache.ibatis.logging.stdout.StdOutImpl
   mapper-locations: classpath:mapper/*Mapper.xml
   global-config:
     db-config:
       id-type: auto
+logging:
+  level:
+    com.example.system.mapper: DEBUG
+
 

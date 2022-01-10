@@ -20,7 +20,7 @@ import java.util.Date;
 /**
     * 操作日志记录
     */
-@ApiModel(value="com-bjsxt-domain-OperLog")
+@ApiModel(value="com-example.system-domain-OperLog")
 @Data
 @EqualsAndHashCode(callSuper=true)
 @AllArgsConstructor

@@ -16,7 +16,7 @@ import javax.validation.constraints.NotBlank;
 /**
     * 菜单权限表
     */
-@ApiModel(value="com-bjsxt-dto-MenuDto")
+@ApiModel(value="com-example.system-dto-MenuDto")
 @Data
 @EqualsAndHashCode(callSuper=true)
 @AllArgsConstructor

@@ -26,7 +26,7 @@ import java.util.Map;
  * @Author:
  */
 @Configuration
-@EnableConfigurationProperties(value = {ShiroProperties.class, RedisProperties.class})
+@EnableConfigurationProperties(value = {ShiroProperties.class})
 public class ShiroAutoConfiguration {
 
     private ShiroProperties shiroProperties;

@@ -4,8 +4,10 @@ import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
+import org.apache.shiro.web.servlet.ShiroHttpServletRequest;
 import org.apache.shiro.web.servlet.SimpleCookie;
 import org.apache.shiro.web.session.mgt.DefaultWebSessionManager;
+import org.apache.shiro.web.util.WebUtils;
 import org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.data.redis.RedisProperties;
@@ -14,9 +16,13 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.util.StringUtils;
 import org.springframework.web.filter.DelegatingFilterProxy;
 
 import javax.servlet.Filter;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
@@ -132,41 +138,43 @@ public class ShiroAutoConfiguration {
     }
 
 
-    /**
-     * @see DefaultWebSessionManager
-     * @return
-     */
-    @Bean
-    public DefaultWebSessionManager defaultWebSessionManager() {
-        DefaultWebSessionManager sessionManager = new DefaultWebSessionManager();
-        sessionManager.setGlobalSessionTimeout(1800000);
-        sessionManager.setDeleteInvalidSessions(true);
-        sessionManager.setSessionValidationSchedulerEnabled(true);
-        sessionManager.setDeleteInvalidSessions(true);
-        sessionManager.setSessionIdCookie(getSessionIdCookie());
-        return sessionManager;
-    }
+//    /**
+//     * @see DefaultWebSessionManager
+//     * @return
+//     */
+//    @Bean
+//    public DefaultWebSessionManager defaultWebSessionManager() {
+//        DefaultWebSessionManager sessionManager = new DefaultWebSessionManager();
+//        sessionManager.setGlobalSessionTimeout(1800000);
+//        sessionManager.setDeleteInvalidSessions(true);
+//        sessionManager.setSessionValidationSchedulerEnabled(true);
+//        sessionManager.setDeleteInvalidSessions(true);
+////        sessionManager.setSessionIdCookie(getSessionIdCookie());
+//        return sessionManager;
+//    }
+
+
 
     /**
      * 给shiro的sessionId默认的JSSESSIONID名字改掉
      * @return
      */
-    @Bean
-    public SimpleCookie getSessionIdCookie(){
-        SimpleCookie simpleCookie = new SimpleCookie("webcookie");
-        /**
-         * HttpOnly标志的引入是为了防止设置了该标志的cookie被JavaScript读取，
-         * 但事实证明设置了这种cookie在某些浏览器中却能被JavaScript覆盖，
-         * 可被攻击者利用来发动session fixation攻击
-         */
-        simpleCookie.setHttpOnly(true);
-        /**
-         * 设置浏览器cookie过期时间，如果不设置默认为-1，表示关闭浏览器即过期
-         * cookie的单位为秒 比如60*60为1小时
-         */
-        simpleCookie.setMaxAge(-1);
-        return simpleCookie;
-    }
+//    @Bean
+//    public SimpleCookie getSessionIdCookie(){
+//        SimpleCookie simpleCookie = new SimpleCookie("webcookie");
+//        /**
+//         * HttpOnly标志的引入是为了防止设置了该标志的cookie被JavaScript读取，
+//         * 但事实证明设置了这种cookie在某些浏览器中却能被JavaScript覆盖，
+//         * 可被攻击者利用来发动session fixation攻击
+//         */
+//        simpleCookie.setHttpOnly(true);
+//        /**
+//         * 设置浏览器cookie过期时间，如果不设置默认为-1，表示关闭浏览器即过期
+//         * cookie的单位为秒 比如60*60为1小时
+//         */
+//        simpleCookie.setMaxAge(-1);
+//        return simpleCookie;
+//    }
 
     /*加入注解的使用，不加入这个注解不生效--开始*/
 

@@ -2,10 +2,10 @@
   <div class="app-container">
     <!-- 查询条件开始 -->
     <el-form ref="queryForm" :model="queryParams" :inline="true" label-width="68px">
-      <el-form-item label="科室名称" prop="deptName">
+      <el-form-item label="部门名称" prop="deptName">
         <el-input
           v-model="queryParams.deptName"
-          placeholder="请输入科室名称"
+          placeholder="请输入部门名称"
           clearable
           size="small"
           style="width:240px"
@@ -63,10 +63,10 @@
     <!-- 数据表格开始 -->
     <el-table v-loading="loading" border :data="deptTableList" @selection-change="handleSelectionChnage">
       <el-table-column type="selection" width="55" align="center" />
-      <el-table-column label="科室ID" align="center" prop="deptId" />
-      <el-table-column label="科室名称" align="center" prop="deptName" />
-      <el-table-column label="科室编码" align="center" prop="deptNumber" />
-      <el-table-column label="当前挂号量" align="center" prop="regNumber" />
+      <el-table-column label="部门ID" align="center" prop="deptId" />
+      <el-table-column label="部门名称" align="center" prop="deptName" />
+      <el-table-column label="部门编码" align="center" prop="deptNumber" />
+      <el-table-column label="部门人数" align="center" prop="regNumber" />
       <el-table-column label="排序码" align="center" prop="orderNum" />
       <el-table-column label="负责人" align="center" prop="deptLeader" />
       <el-table-column label="电话" align="center" prop="leaderPhone" />
@@ -102,11 +102,11 @@
       append-to-body
     >
       <el-form ref="form" :model="form" :rules="rules" label-width="100px">
-        <el-form-item label="科室名称" prop="deptName">
-          <el-input v-model="form.deptName" placeholder="请输入科室名称" clearable size="small" />
+        <el-form-item label="部门名称" prop="deptName">
+          <el-input v-model="form.deptName" placeholder="请输入部门名称" clearable size="small" />
         </el-form-item>
-        <el-form-item label="科室编码" prop="deptNumber">
-          <el-input v-model="form.deptNumber" placeholder="请输入科室编码" clearable size="small" />
+        <el-form-item label="部门编码" prop="deptNumber">
+          <el-input v-model="form.deptNumber" placeholder="请输入部门编码" clearable size="small" />
         </el-form-item>
         <el-form-item label="挂号开始编号" prop="regNumber">
           <el-input-number v-model="form.regNumber" placeholder="请输入挂号开始编号" clearable size="small" />
@@ -179,10 +179,10 @@ export default {
       // 表单校验
       rules: {
         deptName: [
-          { required: true, message: '科室名称不能为空', trigger: 'blur' }
+          { required: true, message: '部门名称不能为空', trigger: 'blur' }
         ],
         deptNumber: [
-          { required: true, message: '科室编码不能为空', trigger: 'blur' }
+          { required: true, message: '部门编码不能为空', trigger: 'blur' }
         ]
       }
     }
@@ -243,11 +243,11 @@ export default {
     handleAdd() {
       this.open = true
       this.reset()
-      this.title = '添加科室信息'
+      this.title = '添加部门信息'
     },
     // 打开修改的弹出层
     handleUpdate(row) {
-      this.title = '修改科室信息'
+      this.title = '修改部门信息'
       const deptId = row.deptId || this.ids
       // const dictId = row.dictId === undefined ? this.ids[0] : row.dictId
       this.open = true
@@ -262,7 +262,7 @@ export default {
     // 执行删除
     handleDelete(row) {
       const deptIds = row.deptId || this.ids
-      this.$confirm('此操作将永久删除该科室数据, 是否继续?', '提示', {
+      this.$confirm('此操作将永久删除该部门数据, 是否继续?', '提示', {
         confirmButtonText: '确定',
         cancelButtonText: '取消',
         type: 'warning'

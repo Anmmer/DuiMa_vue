@@ -70,7 +70,7 @@ export const asyncRoutes = [
         component: () => import('@/views/system/dept/index'),
         name: '/system/dept',
         meta: {
-          title: '科室管理',
+          title: '部门管理',
           icon: 'edit'
         }
       },
